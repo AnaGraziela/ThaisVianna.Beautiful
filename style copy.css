@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #612d02;
+}
+body {
+  background-color: #a7a4a3;
+}
+#container {
+  margin: auto 300px auto 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #f2e5e4;
+}
+/* ============================ */
+#main-panel {
+  display: flex;
+  flex-direction: row;
+}
+#div-logo-and-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#img-foto-thais {
+  width: 600px;
+  height: auto;
+}
+#img-logo {
+  width: 550px;
+  height: auto;
+}
+#txt-painel-inicial {
+  text-align: center;
+}
+#main-panel-button {
+  width: 400px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #4b3a17;
+  font-family: "Playfair Display", serif;
+  background-color: #e4b3a4;
+  border-color: #bea25f;
+  margin-top: 20px;
+}
+.seta {
+  background-color: #e4b3a4;
+  font-size: 30px; /* seta maior que o texto */
+  vertical-align: text-top; /* alinha verticalmente */
+  margin-left: 5px;
+  top: 0;
+}
+#courses-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 10px solid #af9500;
+  background-color: #f0d7d5;
+  border: 2px solid #6d5b32;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+#courses-panel-button {
+  width: 1000px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #4b3a17;
+  font-family: "Playfair Display", serif;
+  background-color: #e4b3a4;
+  border-color: #bea25f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* ============================ */
+#links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 10px;
+}
+#links p , #div-link-scheduling p{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  color: #483520;
+}
+#div-link {
+  width: 360px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ece1ad;
+  border: 2px solid #6d5b32;
+  border-radius: 20px;
+}
+#img-link {
+  margin-left: 10px;
+  width: 40px;
+  height: auto;
+}
+#img-link-scheduling{
+  margin-left: 10px;
+  width: 100px;
+  height: auto;
+}
+#div-link-scheduling{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ece1ad;
+  border: 2px solid #6d5b32;
+  border-radius: 20px;
+  margin-top: 10px;
+}
