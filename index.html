@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMGs/icon-site.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>thaisviana.beauty</title>
+</head>
+<body>
+    <div id="container">
+        <main>
+            <!-- Painel principal -->
+            <section id="main-panel">
+                <img id="img-foto-thais" src="IMGs/thais.png" alt="Thais Vianna">
+                <div id="div-logo-and-description">
+                    <img id="img-logo" src="IMGs/logo.png" alt="Logo">
+                    <p id="txt-painel-inicial">Beleza com propósito, carinho e profissionalismo.<br> 
+                            Descubra nossos serviços e agende seu atendimento com facilidade!</p>
+                    <a href="#courses-link">
+                        <button id="main-panel-button">MEUS LINKS <span class="seta">&#x2193;</span></button>
+                    </a>
+                </div>
+            </section>
+            <section id="courses-panel">
+                <img id="img-logo-div-cursos" src="IMGs/conheca-cursos.png" alt="Logo">
+                <p id="txt-div-cursos">Como transformar sua paixão por beleza em profissão! 
+                    Aprenda tudo sobre cílios e sobrancelhas com quem entende do assunto.</p>
+                <a data-link="whats" target="_blank">
+                    <button onclick="location.href='#courses-link'" id="courses-panel-button">CONHEÇA NOSSOS CURSOS</button>
+                </a>
+            </section>
+              
+            <!-- Links -->
+            <section id="links">
+                <a data-link="local" target="_blank">
+                    <div id="div-link">
+                        <p class="dancing-font">Localização</p>
+                        <img id="img-link" src="IMGs/icon-local.svg" alt="Local">
+                    </div>
+                </a>
+                <a data-link="insta" target="_blank">
+                    <div id="div-link">
+                        <p class="dancing-font">Instagram</p>
+                        <img id="img-link" src="IMGs/icon-insta.svg" alt="Insta">
+                    </div>
+                </a>
+                <a data-link="whats" target="_blank">
+                    <div id="div-link">
+                        <p class="dancing-font">WhatsApp</p>
+                        <img id="img-link" src="IMGs/icon-whats.svg" alt="Whats">
+                    </div>
+                </a>
+            </section>
+
+            <!-- Agendamento -->
+            <section>
+                <a data-link="site" target="_blank">
+                    <div id="div-link-scheduling">
+                        <p class="dancing-font">Venha, agende já o seu horário! </p>
+                        <img id="img-link-scheduling" src="IMGs/icon-calendario.svg" alt="Agendamento">
+                    </div>
+                </a>
+            </section>
+
+            <!-- Procedimentos -->
+            <section id="cards">
+                <div id="card">
+                    <div id="card-title">
+                        <p class="dancing-font">Sobrancelhas</p>
+                        <img id="card-icon" src="IMGs/icon-sobrancelha.svg" alt="Procedimento">
+                    </div>
+                    <ul id="txt-card">
+                        <li>Design Personalizado R$ 35,00</li>
+                        <li>Design com Henna R$ 60,00</li>
+                        <li>Brow Lamination R$ 110,00</li>
+                        <li>Nanoblading-Micropigmentação Fio a Fio R$ 350,00</li>
+                    </ul>
+                    <img id="card-img" src="IMGs/card-sobrancelha.png" alt="Procedimento">
+                    <a data-link="site" target="_blank">
+                        <button class="dancing-font" id="card-button">AGENDAR PROCEDIMENTO</button>
+                    </a>
+                </div>
+                <div id="card">
+                    <div id="card-title">
+                        <p class="dancing-font">Cílios</p>
+                        <img id="card-icon" src="IMGs/icon-cilios.svg" alt="Procedimento">
+                    </div>
+                    <ul id="txt-card">
+                        <li>Lash Lifting R$ 100,00</li>
+                        <li>Manutenção R$ 120,00</li>
+                        <li>Extensão de Cílios Express R$ 120,00</li>
+                        <li>Extensão de cílios Fio a Fio Clássico R$ 140,00</li>
+                        <li>Extensão de cílios Volume 3D (Egípcio) R$ 150,00</li>
+                        <li>Extensão de cílios Volume Brasileiro R$ 160,00</li>
+                    </ul>
+                    <img id="card-img" src="IMGs/card-cilios.png" alt="Procedimento">
+                    <a data-link="site" target="_blank">
+                        <button class="dancing-font" id="card-button">AGENDAR PROCEDIMENTO</button>
+                    </a>
+                </div>
+                <div id="card">
+                    <div id="card-title">
+                        <p class="dancing-font">Lábios</p>
+                        <img id="card-icon" src="IMGs/icon-labios.svg" alt="Procedimento">
+                    </div>
+                    <ul id="txt-card">
+                        <li>Esfoliação Labial R$ 20,00</li>
+                        <li>Hydra Gloss Nutri R$ 100,00</li>
+                        <li>BB Lips (Hydra Color) R$ 120,00</li>
+                        <li>Nano Lips - Revitalização Labial R$ 350,00</li>
+                    </ul>
+                    <img id="card-img" src="IMGs/card-labios.png" alt="Procedimento 11544">
+                    <a data-link="site" target="_blank">
+                        <button class="dancing-font" id="card-button">AGENDAR PROCEDIMENTO</button>
+                    </a>
+                </div>
+                <div id="card">
+                    <div id="card-title">
+                        <p class="dancing-font">Face</p>
+                        <img id="card-icon" src="IMGs/icon-face.svg" alt="Procedimento">
+                    </div>
+                    <ul id="txt-card">
+                        <li>Detox Facial com Peeling de Diamante R$ 70,00</li>
+                        <li>Glow Facial com Dermaplaning R$ 80,00</li>
+                        <li>Rejuvenescimento Gravidade Zero R$ 80,00</li>
+                        <li>Limpeza de Pele R$ 120,00</li>
+                        <li>Maquiagem Profissional R$ 140,00</li>
+                        <li>Limpeza de Pele Glow com Dermaplaning R$ 160,00</li>
+                        <li>BB Glow Pele de Porcelana R$ 180,00</li>
+                        <li>Jato de Plasma R$ 180,00</li>
+                        <li>Microagulhamento Facial R$ 200,00</li>
+                    </ul>
+                    <img id="card-img" src="IMGs/card-face.png" alt="Procedimento">
+                    <a data-link="site" target="_blank">
+                        <button class="dancing-font" id="card-button">AGENDAR PROCEDIMENTO</button>
+                    </a>
+                </div>
+                <div id="card">
+                    <div id="card-title">
+                        <p class="dancing-font">Epilação</p>
+                        <img id="card-icon" src="IMGs/icon-epilacao.svg" alt="Procedimento">
+                    </div>
+                    <ul id="txt-card">
+                        <li>Epilação Buço R$ 15,00</li>
+                        <li>Epilação Facial R$ 50,00</li>
+                    </ul>
+                    <img id="card-img" src="IMGs/card-epilacao.png" alt="Procedimento">
+                    <a data-link="site" target="_blank">
+                        <button class="dancing-font" id="card-button">AGENDAR PROCEDIMENTO</button>
+                    </a>
+                </div>
+            </main>
+        <footer>
+            <img id="img-footer" src="IMGs/logo-final.png" alt="Procedimento">
+        </footer>
+    </div>
+</body>
+</html>

@@ -7,14 +7,25 @@
 body {
   background-color: #a7a4a3;
 }
+.dancing-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  color: #483520;
+}
 #container {
   margin: auto 300px auto 300px;
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #f2e5e4;
 }
+
 /* ============================ */
+
 #main-panel {
   display: flex;
   flex-direction: row;
@@ -77,21 +88,15 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 /* ============================ */
+
 #links {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   margin-top: 10px;
-}
-#links p , #div-link-scheduling p{
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 40px;
-  color: #483520;
 }
 #div-link {
   width: 360px;
@@ -105,17 +110,19 @@ body {
 }
 #img-link {
   margin-left: 10px;
-  width: 40px;
+  width: 55px;
   height: auto;
+  margin-top: 10px;
 }
-#img-link-scheduling{
+#img-link-scheduling {
   margin-left: 10px;
   width: 100px;
   height: auto;
+  margin-top: 0;
 }
-#div-link-scheduling{
+#div-link-scheduling {
   width: 100%;
-  height: 65px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,4 +130,67 @@ body {
   border: 2px solid #6d5b32;
   border-radius: 20px;
   margin-top: 10px;
+}
+#div-link-scheduling p {
+  font-size: 50px;
+}
+#img-link-scheduling {
+  margin-top: 15px;
+}
+
+/* ============================ */
+
+#cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#card-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+#card{
+  margin-top: 20px;
+  width: 450px;
+  border: 10px solid #af9500;
+  background-color: #f0d7d5;
+  border: 2px solid #6d5b32;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#card-icon{
+  width: 80px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+#card-img{
+  width: 400px;
+}
+#card-button{
+  width: 400px;
+  height: 60px;
+  border-radius: 20px;
+  font-size: 25px;
+  color: #4b3a17;
+  font-family: "Playfair Display", serif;
+  background-color: #e4b3a4;
+  border-color: #bea25f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#img-footer{
+  margin-top: 50px;
+  width: 350px;
 }
