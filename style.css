@@ -3,9 +3,10 @@
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #612d02;
+  text-decoration: none;
 }
 body {
-  background-color: #a7a4a3;
+  background-color: #f2e5e4;
 }
 .dancing-font {
   font-family: "Dancing Script", cursive;
@@ -70,7 +71,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 10px solid #af9500;
   background-color: #f0d7d5;
   border: 2px solid #6d5b32;
   border-radius: 30px;
@@ -144,15 +144,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-#card-title{
+.card-title{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
-#card{
+.card{
   margin-top: 20px;
   width: 450px;
   border: 10px solid #af9500;
@@ -164,15 +166,15 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-#card-icon{
+.card-icon{
   width: 80px;
   margin-top: 15px;
   margin-left: 10px;
 }
-#card-img{
+.card-img{
   width: 400px;
 }
-#card-button{
+.card-button{
   width: 400px;
   height: 60px;
   border-radius: 20px;
