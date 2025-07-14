@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 body {
-  background-color: #f2e5e4;
+  background-color: #614645;
 }
 .dancing-font {
   font-family: "Dancing Script", cursive;
@@ -17,11 +17,7 @@ body {
   color: #483520;
 }
 #container {
-  margin: auto 300px auto 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding: 10px 480px;
   background-color: #f2e5e4;
 }
 
@@ -29,7 +25,10 @@ body {
 
 #main-panel {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
+  
 }
 #div-logo-and-description {
   display: flex;
@@ -153,18 +152,24 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  top:0;
 }
 .card{
   margin-top: 20px;
-  width: 450px;
-  border: 10px solid #af9500;
+  width: 750px;
   background-color: #f0d7d5;
   border: 2px solid #6d5b32;
   border-radius: 20px;
   display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
+.card-anuncio{
+  display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  position: relative;
+
 }
 .card-icon{
   width: 80px;
@@ -175,19 +180,22 @@ body {
   width: 400px;
 }
 .card-button{
-  width: 400px;
+  width: 300px;
   height: 60px;
   border-radius: 20px;
-  font-size: 25px;
+  font-size: 20px;
   color: #4b3a17;
   font-family: "Playfair Display", serif;
   background-color: #e4b3a4;
   border-color: #bea25f;
   margin-top: 10px;
   margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  margin: 10px;
 }
-.footer{
-  margin-top: 20px;
+footer{
   display: flex;
   align-items: center;
   justify-content: center;
