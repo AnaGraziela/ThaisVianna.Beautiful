@@ -27,73 +27,67 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-  width: 380px;
-  height: 240px;
+  width: 300px;
+  height: 170px;
   position: unset;
-
 }
 #div-logo-and-description {
-  width: 200px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  left: 230px;
+  left: 230px;  
 }
 #img-foto-thais {
-  width: 200px;
-  position: absolute;
-  height: auto;
-  left: 22px;
-  top:38px
-
+  width: 150px;
+  height: 160px;
+  margin-top: 10px;  
 }
 #img-logo {
-  width: 160px;
+  width: 130px;
   height: auto;
 }
 #txt-painel-inicial {
   text-align: center;
-  font-size: 12px;
+  font-size: 6px;
 }
 #main-panel-button {
-  width: 170px;
-  height: 40px;
+  width: 130px;
+  height: 25px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 10px;
   color: #4b3a17;
   font-family: "Playfair Display", serif;
   background-color: #e4b3a4;
   border-color: #bea25f;
   margin-top: 10px;
-  font-size: 15px;
 }
 .seta {
   background-color: #e4b3a4;
-  font-size: 20px; /* seta maior que o texto */
+  font-size: 10px; /* seta maior que o texto */
   vertical-align: text-top; /* alinha verticalmente */
   margin-left: 5px;
   top: 0;
 }
 #courses-panel {
-  width: 380px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #f0d7d5;
   border: 2px solid #6d5b32;
-  border-radius: 10px;
+  border-radius: 6px;
   margin: 0 auto;
-  font-size: 15px;
+  font-size: 10px;
   text-align: center;
 }
 #courses-panel-button {
-  width: 360px;
-  height: 50px;
-  border-radius: 15px;
-  font-size: 22px;
-  font-size: 20px;
+  width: 280px;
+  height: 25px;
+  border-radius: 10px;
+  font-size: 10px;
   color: #4b3a17;
   font-family: "Playfair Display", serif;
   background-color: #e4b3a4;
@@ -102,7 +96,7 @@
   margin-bottom: 10px;
 }
 #img-courses{
-  width: 350px;
+  width: 280px;
   margin-top: 5px;
 }
 /* ============================ */
@@ -110,25 +104,26 @@
 #links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
-  margin-top: 10px;
+  margin-top: 15px;
 }
-#div-link {
-  width: 120px;
-  height: 80px;
+.div-link {
+  width: 93px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   background-color: #ece1ad;
   border: 2px solid #6d5b32;
   border-radius: 10px;
-  font-size: 25px;
+  font-size: 13px;
+  margin: 0 4px;
 }
-#img-link {
-  width: 35px;
+.img-link {
+  width: 20px;
   height: auto;
+  margin-left: 3px;
   margin-top: 7px;
 }
 #img-link-scheduling {
@@ -137,14 +132,14 @@
   margin-top: 0;
 }
 #div-link-scheduling {
-  width: 380px;
-  height: 50px;
+  width: 300px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #ece1ad;
   border: 2px solid #6d5b32;
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 10px;
 }
 #scheduling{
@@ -153,10 +148,11 @@
   justify-content: center;
 }
 #div-link-scheduling p {
-  font-size: 25px;
+  font-size: 14px;
 }
 #img-link-scheduling {
-  margin-top: 15px;
+  margin-top: 6px;
+  width: 30px;
 }
 
 /* ============================ */
@@ -172,38 +168,37 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  font-size: 40px;
+  font-size: 20px;
 }
 .card{
-  margin-top: 20px;
-  width: 380px;
-  border: 10px solid #af9500;
+  margin-top: 15px;
+  width: 300px;
   background-color: #f0d7d5;
   border: 2px solid #6d5b32;
-  border-radius: 20px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .txt-card li{
-  width: 300px;
-  font-size: 17px;
+  width: 250px;
+  font-size: 10px;
   margin-bottom: 7px;
 }
 .card-icon{
-  width: 80px;
+  width: 50px;
   margin-top: 15px;
   margin-left: 10px;
 }
 .card-img{
-  width: 380px;
+  width: 270px;
 }
 .card-button{
-  width: 360px;
-  height: 50px;
-  border-radius: 15px;
-  font-size: 22px;
+  width: 280px;
+  height: 25px;
+  border-radius: 10px;
+  font-size: 10px;
   color: #4b3a17;
   font-family: "Playfair Display", serif;
   background-color: #e4b3a4;
