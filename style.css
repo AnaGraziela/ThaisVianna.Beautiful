@@ -10,15 +10,12 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 25px;
   color: #483520;
 }
 #container {
   padding: 10px 0px;
   display: flex;
   align-items: center;
-    border: 2px solid #6d5b32;
-
   justify-content: center;
   flex-direction: column;
   background-color: #f2e5e4;
@@ -29,12 +26,14 @@
 #main-panel {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 280px;
+  justify-content: end;
+  width: 380px;
+  height: 240px;
+  position: unset;
+
 }
 #div-logo-and-description {
-  width: 270px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,14 +41,15 @@
   left: 230px;
 }
 #img-foto-thais {
-  width: 150px;
+  width: 200px;
+  position: absolute;
   height: auto;
-    left: 0px;
-    top:20px
+  left: 22px;
+  top:38px
 
 }
 #img-logo {
-  width: 200px;
+  width: 160px;
   height: auto;
 }
 #txt-painel-inicial {
@@ -57,7 +57,7 @@
   font-size: 12px;
 }
 #main-panel-button {
-  width: 250px;
+  width: 170px;
   height: 40px;
   border-radius: 10px;
   font-size: 20px;
@@ -65,7 +65,8 @@
   font-family: "Playfair Display", serif;
   background-color: #e4b3a4;
   border-color: #bea25f;
-  margin-top: 20px;
+  margin-top: 10px;
+  font-size: 15px;
 }
 .seta {
   background-color: #e4b3a4;
@@ -75,21 +76,23 @@
   top: 0;
 }
 #courses-panel {
-  width: 100%;
+  width: 380px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #f0d7d5;
   border: 2px solid #6d5b32;
-  border-radius: 30px;
+  border-radius: 10px;
   margin: 0 auto;
-  font-size: 12px;
+  font-size: 15px;
+  text-align: center;
 }
 #courses-panel-button {
-  width: 460px;
-  height: 40px;
-  border-radius: 10px;
+  width: 360px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 22px;
   font-size: 20px;
   color: #4b3a17;
   font-family: "Playfair Display", serif;
@@ -99,7 +102,8 @@
   margin-bottom: 10px;
 }
 #img-courses{
-  width: 450px;
+  width: 350px;
+  margin-top: 5px;
 }
 /* ============================ */
 
@@ -111,29 +115,29 @@
   margin-top: 10px;
 }
 #div-link {
-  width: 150px;
-  height: 40px;
+  width: 120px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #ece1ad;
   border: 2px solid #6d5b32;
   border-radius: 10px;
+  font-size: 25px;
 }
 #img-link {
-  margin-left: 10px;
   width: 35px;
   height: auto;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 #img-link-scheduling {
-  margin-left: 10px;
   width: 50px;
   height: auto;
   margin-top: 0;
 }
 #div-link-scheduling {
-  width: 100%;
+  width: 380px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -142,6 +146,11 @@
   border: 2px solid #6d5b32;
   border-radius: 20px;
   margin-top: 10px;
+}
+#scheduling{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #div-link-scheduling p {
   font-size: 25px;
@@ -163,10 +172,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  font-size: 40px;
 }
 .card{
   margin-top: 20px;
-  width: 100%;
+  width: 380px;
   border: 10px solid #af9500;
   background-color: #f0d7d5;
   border: 2px solid #6d5b32;
@@ -176,25 +186,33 @@
   justify-content: center;
   flex-direction: column;
 }
+.txt-card li{
+  width: 300px;
+  font-size: 17px;
+  margin-bottom: 7px;
+}
 .card-icon{
   width: 80px;
   margin-top: 15px;
   margin-left: 10px;
 }
 .card-img{
-  width: 400px;
+  width: 380px;
 }
 .card-button{
-  width: 400px;
-  height: 60px;
-  border-radius: 20px;
-  font-size: 25px;
+  width: 360px;
+  height: 50px;
+  border-radius: 15px;
+  font-size: 22px;
   color: #4b3a17;
   font-family: "Playfair Display", serif;
   background-color: #e4b3a4;
   border-color: #bea25f;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.color-randon{
+  color: rgb(139, 58, 11);
 }
 .footer{
   margin-top: 20px;
