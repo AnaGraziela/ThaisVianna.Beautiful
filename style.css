@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 body {
-  background-color: #614645;
+  background-color: #f2e5e4;
 }
 .dancing-font {
   font-family: "Dancing Script", cursive;
@@ -17,7 +17,11 @@ body {
   color: #483520;
 }
 #container {
-  padding: 10px 480px;
+  margin: auto 300px auto 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-color: #f2e5e4;
 }
 
@@ -25,10 +29,7 @@ body {
 
 #main-panel {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
-  
 }
 #div-logo-and-description {
   display: flex;
@@ -143,33 +144,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
 }
 .card-title{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  top:0;
 }
 .card{
   margin-top: 20px;
-  width: 750px;
+  width: 450px;
+  border: 10px solid #af9500;
   background-color: #f0d7d5;
   border: 2px solid #6d5b32;
   border-radius: 20px;
   display: flex;
-  flex-direction: row;
-  padding-left: 10px;
-}
-.card-anuncio{
-  display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
-  position: relative;
-
 }
 .card-icon{
   width: 80px;
@@ -180,22 +173,19 @@ body {
   width: 400px;
 }
 .card-button{
-  width: 300px;
+  width: 400px;
   height: 60px;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 25px;
   color: #4b3a17;
   font-family: "Playfair Display", serif;
   background-color: #e4b3a4;
   border-color: #bea25f;
   margin-top: 10px;
   margin-bottom: 10px;
-  position: absolute;
-  bottom: 0;
-  left: 10px;
-  margin: 10px;
 }
-footer{
+.footer{
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
