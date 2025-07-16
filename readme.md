@@ -1,1 +1,0 @@
-Estou na parte de animação do site

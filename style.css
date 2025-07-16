@@ -5,6 +5,11 @@
   color: #612d02;
   text-decoration: none;
 }
+
+/* Foi utilizado para suavizar a rolagem da página */
+html {
+  scroll-behavior: smooth;
+}
 .dancing-font {
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
@@ -15,12 +20,12 @@
 #container {
   padding: 10px 0px;
   display: flex;
-    align-items: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #f2e5e4;
 }
-main{
+main {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -34,7 +39,7 @@ main{
   width: 300px;
   height: 170px;
   /*background-image: linear-gradient(to right, rgb(150, 98, 55), #f2e5e4); /* Exemplo: degradê horizontal de vermelho para azul */
-  background-image: linear-gradient(to bottom, #f2e5e4 60%, #000 150%); 
+  background-image: linear-gradient(to bottom, #f2e5e4 60%, #000 150%);
 }
 #div-logo-and-description {
   width: 150px;
@@ -42,12 +47,12 @@ main{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  left: 230px;  
+  left: 230px;
 }
 #img-foto-thais {
   width: 150px;
   height: 160px;
-  margin-top: 10px;  
+  margin-top: 10px;
 }
 #img-logo {
   width: 130px;
@@ -100,7 +105,7 @@ main{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-#img-courses{
+#img-courses {
   width: 280px;
   margin-top: 5px;
 }
@@ -147,7 +152,7 @@ main{
   border-radius: 10px;
   margin-top: 10px;
 }
-#scheduling{
+#scheduling {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,20 +167,20 @@ main{
 
 /* ============================ */
 
-#cards{
+#cards {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.card-title{
+.card-title {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   font-size: 20px;
 }
-.card{
+.card {
   margin-top: 15px;
   width: 300px;
   background-color: #f0d7d5;
@@ -185,21 +190,28 @@ main{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
-.txt-card li{
+
+/* Foi usado para adicionar um efeito de hover nas cartas */
+.card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  transform: translateY(-8px) scale(1.03);
+}
+.txt-card li {
   width: 250px;
   font-size: 10px;
   margin-bottom: 7px;
 }
-.card-icon{
+.card-icon {
   width: 50px;
   margin-top: 15px;
   margin-left: 10px;
 }
-.card-img{
+.card-img {
   width: 270px;
 }
-.card-button{
+.card-button {
   width: 280px;
   height: 25px;
   border-radius: 10px;
@@ -211,16 +223,97 @@ main{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.color-randon{
+.color-randon {
   color: rgb(139, 58, 11);
 }
-.footer{
+.footer {
   margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#img-footer{
+#img-footer {
   margin-top: 50px;
   width: 300px;
+}
+
+/* Daqui para baixo são as configurações de animação */
+
+/* Animação fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animação de entrada suave para imagens e painéis */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#main-panel,
+#courses-panel,
+#links,
+#scheduling,
+#cards .card {
+  animation: fadeInUp 1s ease both;
+}
+
+/* Animação de destaque no hover dos botões */
+button,
+.card-button {
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+
+button:hover,
+.card-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 24px rgba(190, 162, 95, 0.18);
+}
+
+/* Efeito de brilho suave ao passar o mouse nos cards */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+/* Animação de leve zoom nas imagens ao passar o mouse */
+#img-foto-thais,
+#img-logo,
+#img-courses,
+.card-img {
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
